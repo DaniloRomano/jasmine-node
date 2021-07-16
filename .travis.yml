@@ -3,6 +3,10 @@ notifications:
   email: daniloapromano@live.com
 node_js:
   - 'node'
+dist: xenial
+services:
+  - xvfb
+addons:
+  firefox: stable
 before_install:
   - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
